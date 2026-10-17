@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://open.cait518.cc/stayclock-support/bm-sitemap.xml
