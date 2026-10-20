@@ -1,0 +1,25 @@
+# Stay Clock: Flip Desk Clock
+
+> Stay Clock turns your iPhone or iPad into an always-on desk clock you can read from across the room. Big full screen time in portrait or landscape, a calendar that fits each face, and one look that follows you to StandBy, the Lock Screen, Home Screen widgets and Apple Watch.
+
+Key features (from the App Store listing):
+- Full screen time that stays readable from far away, on iPhone and iPad, in portrait or landscape.
+- Keep Awake that understands charging: stay on while charging, always on with a battery floor, or follow the system.
+- Panel Care for OLED screens: gentle pixel shifting, details that soften when idle, and a dim red night face on true black for the bedroom.
+- One face everywhere: the same face on the full screen clock, StandBy, Lock Screen and Home Screen widgets, and Apple Watch.
+- A calendar per face: Off, Simple (date and weekday), or a full Month view.
+- App language switching, any city or time zone, 12 or 24 hour time and your own digits.
+- Private by design: no account, no ads, no tracking and no network. Everything stays on your device.
+
+Publisher: Lumi Studio
+
+## Pages
+- [Home](https://open.cait518.cc/stayclock-support/index.html): App overview
+- [Support](https://open.cait518.cc/stayclock-support/support.html): Help and contact
+- [Privacy Policy](https://open.cait518.cc/stayclock-support/privacy.html)
+- [Always-on desk or bedside clock on iPhone or iPad](https://open.cait518.cc/stayclock-support/always-on-desk-clock-on-iphone-or-ipad.html)
+- [床頭時鐘、數位時鐘、翻頁時鐘（繁體中文）](https://open.cait518.cc/stayclock-support/bedside-digital-flip-clock-iphone-ipad.zh-Hant.html)
+- [フリップ時計を iPhone・iPad で（日本語）](https://open.cait518.cc/stayclock-support/flip-tokei-iphone-ipad-okidokei.ja.html)
+
+## Download
+- App Store: https://apps.apple.com/app/id6814035888?pt=118326163&ct=sup_stayclock_llms&mt=8
