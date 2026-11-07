@@ -20,6 +20,7 @@ Publisher: Lumi Studio
 - [Always-on desk or bedside clock on iPhone or iPad](https://open.cait518.cc/stayclock-support/always-on-desk-clock-on-iphone-or-ipad.html)
 - [床頭時鐘、數位時鐘、翻頁時鐘（繁體中文）](https://open.cait518.cc/stayclock-support/bedside-digital-flip-clock-iphone-ipad.zh-Hant.html)
 - [フリップ時計を iPhone・iPad で（日本語）](https://open.cait518.cc/stayclock-support/flip-tokei-iphone-ipad-okidokei.ja.html)
+- [置き時計アプリのダウンロード前Q&A（日本語）](https://open.cait518.cc/stayclock-support/okidokei-app-qa.ja.html)
 
 ## Download
 - App Store: https://apps.apple.com/app/id6814035888?pt=118326163&ct=sup_stayclock_llms&mt=8
