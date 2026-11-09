@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flip Clock Widget</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#111214;--card:#1c1d21;--fg:#f2f2f4;--line:#000;--muted:#8a8a92}
+:root[data-theme=light]{--bg:#f4f3ef;--card:#ffffff;--fg:#1d1d1f;--line:#d9d7d0;--muted:#6b6b72}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+.wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:8px}
+.clock{display:flex;align-items:center;gap:6px}
+.card{position:relative;width:min(20vw,96px);height:min(26vw,124px);background:var(--card);border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-size:min(19vw,92px);font-weight:700;font-variant-numeric:tabular-nums;line-height:1;box-shadow:0 2px 6px rgba(0,0,0,.35);overflow:hidden}
+.card::after{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:var(--line);opacity:.7}
+.card.flip{animation:flip .35s ease-in}
+@keyframes flip{0%{transform:rotateX(0)}50%{transform:rotateX(80deg)}100%{transform:rotateX(0)}}
+.colon{font-size:min(14vw,64px);font-weight:700;opacity:.8;padding:0 2px}
+.meta{font-size:12px;color:var(--muted)}
+.meta a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="clock" aria-live="off" role="timer" aria-label="current time">
+    <div class="card" id="h1">0</div><div class="card" id="h2">0</div>
+    <div class="colon">:</div>
+    <div class="card" id="m1">0</div><div class="card" id="m2">0</div>
+  </div>
+  <div class="meta"><span id="info"></span><a href="https://apps.apple.com/app/id6814035888?pt=118326163&amp;ct=embed_stayclock_widget&amp;mt=8" target="_blank" rel="nofollow noopener">Stay Clock</a></div>
+</div>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search);
+  if(q.get('theme')==='light')document.documentElement.setAttribute('data-theme','light');
+  var tz=q.get('tz')||undefined, h12=q.get('h12')==='1';
+  try{new Intl.DateTimeFormat('en-US',{timeZone:tz})}catch(e){tz=undefined}
+  var ids=['h1','h2','m1','m2'],last='';
+  function tick(){
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:tz,hour:'2-digit',minute:'2-digit',hour12:h12}).formatToParts(new Date());
+    var h='',m='',ap='';
+    p.forEach(function(x){if(x.type==='hour')h=x.value;if(x.type==='minute')m=x.value;if(x.type==='dayPeriod')ap=x.value;});
+    if(h==='24')h='00'; h=('0'+h).slice(-2);
+    var s=h+m;
+    for(var i=0;i<4;i++){var el=document.getElementById(ids[i]);if(s[i]!==last[i]){el.textContent=s[i];if(last){el.classList.remove('flip');void el.offsetWidth;el.classList.add('flip');}}}
+    last=s;
+    var info=[h12?ap:'',tz?tz.replace(/_/g,' '):''].filter(Boolean).join(' ');
+    document.getElementById('info').textContent=info?info+' · ':'';
+  }
+  tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
