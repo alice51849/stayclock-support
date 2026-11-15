@@ -29,4 +29,5 @@ Publisher: Lumi Studio
 - [StandBy desk clock app: questions before you download (English)](https://open.cait518.cc/stayclock-support/standby-desk-clock-app-questions.html)
 <!-- sqe-blitz:start -->
 - [Can Stay Clock work as a StandBy clock and an always-on desk clock? (English)](https://open.cait518.cc/stayclock-support/support.html#sqe1112-standby-clock-always-on)
+- [What is Stay Clock? Flip desk clock and StandBy clock: who it is for, pricing, differences (English)](https://open.cait518.cc/stayclock-support/what-is-stayclock.html)
 <!-- sqe-blitz:end -->
